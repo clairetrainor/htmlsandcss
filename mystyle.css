@@ -59,12 +59,13 @@ nav a:hover {
 
 #wrapper {
     border-style: solid;
-    background-color: aliceblue;
+    background-color: rgb(242, 249, 255);
     border-width: 3px;
     font-size: 100%;
-    width: 90%;
+    width: 30em;
     max-width: 1200px;
-    box-shadow: 0 0 3px black;      
+    z-index:1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);    
     text-align: center;
     margin: auto;
 
@@ -74,16 +75,23 @@ html, body {
 margin: 0;
 }
 
-
+footer{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #944747;
+}
 body {
     width: 100%;
     /*Image by rawpixel.com on Freepik</a>*/
-    background: grey url("clouds.png") repeat 0 0;
+    background: grey url("clouds2.png") repeat 0 0;
 	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 15s linear 0s normal none infinite animate;
+	-ms-animation: 15s linear 0s normal none infinite animate;
+	-o-animation: 15s linear 0s normal none infinite animate;
+	animation: 15s linear 0s normal none infinite animate;
     /*max-width: 2400px;*/
     font-family: "Roboto", sans-serif; 
     -webkit-font-smoothing: antialiased;
@@ -93,27 +101,27 @@ body {
 
 @-webkit-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+	to {background-position: 700px 0;}
 }
  
 @-moz-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+	to {background-position: 700px 0;}
 }
  
 @-ms-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+	to {background-position: 700px 0;}
 }
  
 @-o-keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+	to {background-position: 700px 0;}
 }
  
 @keyframes animate {
 	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+	to {background-position: 700px 0;}
 }
 
 .login-page, .create-page{
@@ -193,9 +201,9 @@ body {
 .link span::before {
     position: absolute;
     content: attr(data-content);
-    color: blue;
+    color: lightblue;
     text-decoration: underline;
-    text-decoration-color: pink;
+    text-decoration-color: red;
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
     transition: clip-path 275ms ease;
 }
@@ -203,5 +211,9 @@ span.wavy::before {
     text-decoration-style: wavy;
 }
 
-
+#container {
+    margin: auto;
+    width: 100%;
+    padding: 15px;
+}
 
