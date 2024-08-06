@@ -17,7 +17,7 @@ header h1 {
 header h2 {
     font-family: "Roboto", sans-serif;
     font-size: 250%;
-    color:#dbd4d4;
+    color:#eeeeee;
     text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     margin: 10px 0 0 0;
     text-align: center;
@@ -27,6 +27,7 @@ header h2 {
 #header-background {
     width: 100%;
     margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 nav ul {
@@ -48,6 +49,7 @@ nav ul li a {
     font-weight: bold;
     text-align:center;
     text-decoration: none;
+    color:pink;
 }
 
 nav a:hover {
@@ -114,7 +116,7 @@ body {
 	to {background-position: 500px 0;}
 }
 
-.login-page{
+.login-page, .create-page{
     width: 360px;
     padding: 8% 0 0;
     margin:auto;
@@ -176,10 +178,30 @@ body {
     display: none;
 }
 
-
-
-
-
+.link {
+    position: relative;
+    transition: clip-path 275ms ease;
+}
+.link:hover span::before, .link:focus span::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link span {
+    position: relative;
+    display: inline-block;
+    color: lightblue;
+}
+.link span::before {
+    position: absolute;
+    content: attr(data-content);
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: pink;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;
+}
+span.wavy::before {
+    text-decoration-style: wavy;
+}
 
 
 
